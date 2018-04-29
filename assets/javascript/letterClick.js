@@ -9,7 +9,7 @@ $(function(){
 $(function(){
     $("#b").click(function(event) {
        event.preventDefault();
-       Main.UpdateLetter("b");
+       Main.UpdateLetter("b")
     });
    }
    );

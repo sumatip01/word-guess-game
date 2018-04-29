@@ -1,4 +1,4 @@
-Main = {};
+Main = [];
 Main.WordArray = [];
 Main.WordUArray = [];
 
@@ -10,8 +10,15 @@ Main.WordU = "";
 
 //functions
 
+var Answers = ['apple','banana','orange','plum','pear','kiwi','watermelon', 'pineapple', 'honey dew', 'cherry', 'avocado', 'nectarine', 'apricot', 'cantaloupe', 'grapefruit', 'grape', 'lemon', 'lime', 'mango', 'papaya', 'peach'];
+var Letters = /^[a-zA-Z]*$/; 
+var AnswersLetters = document.getElementsByClassName("answer_char");
+
+onload = init;
+function init(){
+
 Main.Pullword = function{}{
-    Main.Word = Words.List [(Math.floor(Math.random()*Main.NumInGame))];
+    Main.Word = Answers [(Math.floor(Math.random()*Main.NumInGame))];
 }
 
 Main.SetUnderline = function{}{
@@ -23,6 +30,8 @@ Main.SetUnderline = function{}{
 Main.WordU = Main.WordUArray.join("");
 document.getElementById("WORD").innerHTML = Main.WordU;
 document.getElementById("numLetters").innerHTML = Main.Word.length;
+document.getElementById("guess_button").onclick = function enter() {
+    var userGuess = document.getElementById("guess_text").value;
 }
 
 Main.UpdateLetter = function(letter){
