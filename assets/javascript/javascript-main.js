@@ -11,7 +11,7 @@ Main.WordU = "";
 //functions
 
 var Answers = ['apple','banana','orange','plum','pear','kiwi','watermelon', 'pineapple', 'honey dew', 'cherry', 'avocado', 'nectarine', 'apricot', 'cantaloupe', 'grapefruit', 'grape', 'lemon', 'lime', 'mango', 'papaya', 'peach'];
-var Letters = /^[a-zA-Z]*$/; 
+var Letters = /^[a-z A-Z]*$/; 
 var AnswersLetters = document.getElementsByClassName("answer_char");
 
 onload = init;
