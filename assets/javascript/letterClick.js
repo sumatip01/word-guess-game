@@ -1,3 +1,9 @@
+//$("#id").click(validate).keyup(function(event)
+//{
+//    if (event.keyCode == 'a') validate();
+//});
+//function validate() { ... validate $(this).val(); ... }
+
 $(function(){
  $("#a").click(function(event) {
     event.preventDefault();
@@ -9,7 +15,7 @@ $(function(){
 $(function(){
     $("#b").click(function(event) {
        event.preventDefault();
-       Main.UpdateLetter("b")
+       Main.UpdateLetter("b");
     });
    }
    );
